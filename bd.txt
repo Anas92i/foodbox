@@ -1,0 +1,9 @@
+Table USER: 
+ id
+ pseudo
+ email
+ password hash
+ avatar
+ date creation_compte
+
+ 
