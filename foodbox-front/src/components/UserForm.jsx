@@ -8,7 +8,7 @@ export default function UserForm({ onCreated }) {
 
   const submit = async (e) => {
     e.preventDefault();
-    await api.post("/users", { username, email, password });
+    await api.post("/users", { username, email, passwordHash: password });
     setUsername(""); setEmail(""); setPassword("");
     onCreated();
   };
